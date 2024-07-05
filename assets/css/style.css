@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+    background-color: black;
+    color: #F29727;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- Branding Strip -- */
+
+.gold-stripe {
+    background-color: #F29727;
+    height: 20px;
+}
+
+.black-stripe {
+    background-color: #000000;
+    height: 20px;
+}
+
+.green-stripe {
+    background-color: #075F1B;
+    height: 20px;
+}
+
+.green-stripe-slim {
+    background-color: #075F1B;
+    height: 5px;
+}
+
+.branding-strip {
+    padding: 20px;
+    text-align: center;
+}
+
+.slogan {
+    font-family: 'Kaushan Script', cursive;
+    padding: 0 20px 0 20px;
+}

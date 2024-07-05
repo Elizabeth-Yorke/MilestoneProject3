@@ -1,0 +1,49 @@
+DATA
+dictionary = dict(zip(headings, data)) return dictionary
+
+DATA STORE
+Acts as a repository to hold an organization's data.
+After filling it with data a data store becomes an archive that can then be searched.
+It equips decision makers with the power to identify trends and patterns that are important to business.
+
+THE DBMS
+Database Management Service
+- Stores data
+- Updates stored data
+- Retrieves stored data
+
+A SERVER
+A program that runs continually, processing requests from people and applications that want to use its services.
+
+RELATIONAL
+- Most common (linked databases)
+- SQL (Structured Query Language) is used to send commands
+- Well defined structure (tables with named columns). Schema.
+- PK (primary keys) are unique IDs that define each record or row, and do not change if data entries change.
+- FK (primary key from another table - so you can use data from one table in another table)
+- This means changes to data only has to happen on one table for all the tables to access it.
+
+NON-RELATIONAL
+- No SQL links between databases
+- No fixed schema or structure
+- JSON, XML, BSON
+- All documents are separate
+- Can use different fields on the same table
+- key value data, graph stores, time-series data, geo-spatial databases, wide-column databases
+
+MODELLING DATA
+- Changing the data model as you go along is quite tricky with relational datatbases.
+3 DESIGN PHASES:
+- Conceptual (mapping out main entities, relationships and attributes)
+- Logical (decide actual database schema, and associate tables with columns)
+- Physical (deciding how each table should be stored in a computer)
+
+Model structures are also known as ERDs.
+
+
+
+
+
+
+
+

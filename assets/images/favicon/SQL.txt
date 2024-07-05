@@ -1,0 +1,46 @@
+Structured Query Language
+
+Used to give commands to relational databases.
+Create, access, modify the tables, records and fields in a database.
+
+SQL is a DSL - Domain specific language (like html)
+It can only be used in the domain it is written.
+
+EXAMPLES
+
+Single Query
+SELECT x FROM y
+SELECT x FROM y, ORDER BY z.
+
+Filtering
+SELECT x FROM y WHERE z = "foobar";
+SELECT x FROM y WHERE z = "foo" AND q != "bar";
+SELECT x FROM y WHERE z = "foo" OR q = "bar";
+SELECT x FROM y WHERE z LIKE "_oobar";
+SELECT x FROM y WHERE z BETWEEN 1 AND 100;
+SELECT x FROM y WHERE z IS NOT NULL;
+SELECT x FROM y WHERE z IN ("foo", "bar", "foobar");
+
+Multiple Query
+SELECT x FROM y JOIN z
+SELECT x FROM y LEFT JOIN z
+SELECT x FROM y FULL JOIN z
+SELECT x FROM y CROSS JOIN z
+SELECT x FROM y NATURAL JOIN z
+SELECT x FROM y INNER JOIN z ON q;
+
+Grouping
+SELECT x FROM y GROUP BY z;
+
+Aggregates
+SELECT COUNT(x) FROM y;
+SELECT MIN(x) FROM y;
+SELECT MAX(x) FROM y;
+SELECT SUM(x) FROM y;
+SELECT AVg(x) FROM y;
+
+Aliases
+SELECT x AS q FROM y;
+
+
+CRUD - Create, read, update, delete
