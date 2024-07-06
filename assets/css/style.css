@@ -52,13 +52,13 @@ body {
 }
 
 .color-scheme-cx {
-    background-color: #075F1B;
+    background-color: #A80808;
     color: #FFFFFF;
 }
 
 .color-scheme-cy {
     background-color: #FFFFFF;
-    color: #075F1B;
+    color: #A80808;
 }
 
 /* -- Introduction -- */
@@ -91,19 +91,19 @@ body {
 
 .loved-books {
     text-decoration: none !important;
-    color:#075F1B;
+    color:#A80808;
 }
 
 .latest-books {
     text-decoration: none !important;
-    color:#075F1B;
+    color:#A80808;
 }
 
 /* -- Write Reviews Page -- */
 
 .write-title {
     text-decoration: none !important;
-    color:#075F1B;
+    color:#A80808;
     font-family: "Caveat", cursive;
     font-size: 40px;
 }
@@ -115,7 +115,7 @@ body {
 #review {
     margin: 20px;
     padding: 20px;
-    color: #075F1B;
+    color: #A80808;
 }
 
 /* -- Footer -- */
