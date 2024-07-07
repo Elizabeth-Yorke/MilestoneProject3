@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Margarine&display=swap');
+
+
+.nav-wrapper {
+  font-family: "Caveat", cursive;
+}
+
+/* Footer */
+
+.page-footer {
+  text-align: center;
+  padding: 20px;
+  font-family: "Caveat", cursive;
+}
+
+.social-media {
+  color: white !important;
+  text-decoration: none !important;
+  padding: 20px;
+  font-size: 40px;
+}
+
+/* Sticky Footer from Materialize */
 
 body {
     display: flex;
@@ -8,4 +31,4 @@ body {
   main {
     flex: 1 0 auto;
   }
-      
+

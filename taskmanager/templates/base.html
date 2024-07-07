@@ -11,7 +11,7 @@
 <!-- Materialize CSS and syle.css Links -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
-  <link rel="stylesheet" href="{{url_for('static',filemane='css/style.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" type="text/css">
 
 <!-- Title -->
 
@@ -27,7 +27,7 @@
 
   <nav class="#000000 black">
     <div class="nav-wrapper">
-      <a href="{{ url_for('home')}}" class="brand-logo">Logo</a>
+      <a href="{{ url_for('home')}}" class="brand-logo">Gread Reads!</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="{{ url_for('home')}}">Home</a></li>
@@ -54,29 +54,20 @@
 
 <!-- Footer -->
 
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12 #c62828 red darken-3">
-          <h5 class="white-text">Great Reads!</h5>
-          <p class="grey-text text-lighten-4">Thank you for visiting.</p>
+  <footer class="page-footer #000000 black">
+    <div class="container row white-text #c62828 red darken-3">
+        <div class="col s12 m4">
+          <h5>Thank you for visiting!</h5>
         </div>
-        <div class="col l4 offset-l2 s12 #000000 black">
-          <h5 class="#ffea00 yellow-text accent-3 text-lighten-3">Links</h5>
-          <ul>
-            <li><a class="#ffea00 yellow-text accent-3 text-lighten-3" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a class="#ffea00 yellow-text accent-3 text-lighten-3" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a class="#ffea00 yellow-text accent-3 text-lighten-3" href="https://www.ebay.co.uk/"><i class="fa-brands fa-ebay"></i></a></li>
-            <li><a class="#ffea00 yellow-text accent-3 text-lighten-3" href="https://www.amazon.co.uk/"><i class="fa-brands fa-amazon"></i></a></li>
-          </ul>
+        <div class="col s12 m4">
+          <a class="social-media" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a class="social-media" href="https://www.ebay.co.uk/" target="_blank"><i class="fa-brands fa-ebay"></i></a>
+          <a class="social-media" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a class="social-media" href="https://www.amazon.co.uk/" target="_blank"><i class="fa-brands fa-amazon"></i></a>
         </div>
-      </div>
-    </div>
-    <div class="footer-copyright #c62828 red darken-3">
-      <div class="container white-text">
-      © 2024 Gread Reads
-      <a class="white-text" href="#!">More Links</a>
-      </div>
+        <div class = "col s12 m4">
+          <h5>© 2024 Gread Reads!</h5>
+          </div>
     </div>
   </footer>
 
