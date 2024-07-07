@@ -1,165 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
-</head>
-<body>
-    Hello World!
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<!-- Font Awesome link from cdnjs -->
 
-<!-- Favicon Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-<link rel="manifest" href="assets/images/favicon/site.webmanifest">
+<!-- Materialize CSS and syle.css Links -->
 
-<!-- Bootstrap CSS Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+  <link rel="stylesheet" href="{{url_for('static',filemane='css/style.css')}}" type="text/css">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!-- Title -->
 
-<!-- Fontawesome Link -->
-
-<script src="https://kit.fontawesome.com/b1a8406ee7.js" crossorigin="anonymous"></script>
-
-<!-- CSS Link -->
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-<!-- Page Title -->
-
-    <title>Great Reads</title>
+  <title>Task Manager</title>
 </head>
 
 <!-- Body starts here -->
 
 <body>
-    <header>
+  <header>
 
-<!-- Navbar from Bootstrap -->
+<!-- Navbar from Materialize -->
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand title" href="index.html">Great Reads</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="read-reviews.html">Read Reviews</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="write-reviews.html">Write Reviews</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-
-<!-- Branding Strip -->
-        <div class="gold-stripe"></div>
-        <div class="branding-strip color-scheme-cx">
-            <h2 class="page-title text-uppercase"><strong>Great Reads</strong></h2>
-            <h3 class="slogan"><em>Fall in love with a great read!</em></h3>            
-        </div>
-        <div class="gold-stripe"></div>
-    </header>
-
-<!-- Introduction -->
-
-<div class="container-fluid">
-  <div class="row introduction">
-    <div class="col-md-2 color-scheme-ax d-flex align-content-center flex-wrap">
-      <div class="container-fluid">
-          <img class="image" src="assets/images/pictures/reading1.jpg" alt="awards">
-      </div>
+  <nav class="#000000 black">
+    <div class="nav-wrapper">
+      <a href="{{ url_for('home')}}" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{{ url_for('home')}}">Home</a></li>
+        <li><a href="">New Task</a></li>
+        <li><a href="">Categories</a></li>
+      </ul>
     </div>
-    <div class="col-md-8 color-scheme-cy introduction-text">
-    <section>
-      <h3 class="text-uppercase title"><strong><em>Introduction</em></strong></h3>
-      <hr class="block-divider block-divider--short">
-      <p>Welcome to our book review website, where you can discover new literary treasures and learn more about the latest releases from your favorite authors. Whether you're a bookworm eager to dive into a new story or just looking for recommendations for your next read, our reviews offer insightful analysis and thoughtful critiques to help you make an informed decision. From fiction to non-fiction, bestsellers to hidden gems, we're here to guide you on your literary journey and inspire you to explore the vast world of literature. Join us as we delve into the pages of books and share our thoughts on the stories that captivate and intrigue us.</p>
-    </section>
-    </div>
-    <div class="col-md-2 color-scheme-ax d-flex align-content-center flex-wrap">
-      <div class="container-fluid">
-        <img class="image" src="assets/images/pictures/reading2.jpg" alt="awards">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="gold-stripe"></div>
+  </nav>
 
-<!-- Features Explained -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="{{ url_for('home')}}">Home</a></li>
+        <li><a href="">New Task</a></li>
+        <li><a href="">Categories</a></li>
+  </ul>
+          
+  </header>
 
-<div class="container-fluid">
-  <div class="row features color-scheme-cx">
-    <div class="col-md-5 d-flex align-content-center flex-wrap introduction-text">
-    <section>
-      <h3 class="text-uppercase"><strong><em><a class="section-title" href="read-reviews.html" target="_blank">Read a Review</a></em></strong></h3>
-      <hr class="block-divider block-divider--short">
-      <p>If you're on the fence about a book and not sure if it's worth your time, reading reviews can be incredibly helpful. Reviews can provide insight into the plot, writing style, characters, and overall enjoyment of a book. They can also highlight any potential trigger warnings or controversial themes that may not be the right fit for you. Whether you're looking for a book that will keep you up all night turning the pages or one that will challenge your thinking, reviews can help steer you towards the perfect read for you.</p>
-    </section>
-    </div>
-    <div class="col-md-2 color-scheme-ax d-flex align-content-center flex-wrap">
-      <div class="container-fluid">
-        <img class="image" src="assets/images/pictures/books2.jpg" alt="awards">
-      </div>
-    </div>
-    <div class="col-md-5 color-scheme-cx introduction-text">
-    <section>
-      <h3 class="text-uppercase"><strong><em><a class="section-title" href="write-reviews.html" target="_blank">Write a Review</a></em></strong></h3>
-      <hr class="block-divider block-divider--short">
-      <p>Do you love reading and want to share your thoughts on your favorite books with others? Consider writing book reviews! Book reviews are a great way to inspire others to pick up a new book or help them decide if a particular book is worth their time. By writing a book review, you can engage in thoughtful discussions about the themes, characters, and writing style of a book. You can also support authors and publishers by sharing your honest opinions and promoting their work to a wider audience.</p>
-    </section>
-    </div>
-  </div>
-</div>
-<div class="gold-stripe"></div>
+<!-- Main -->
+
+  <main class="container">
+    {% block element %}
+    {% endblock %}
+  </main>
 
 <!-- Footer -->
 
-<footer> 
-  <div class="container-fluid">
-    <div class="row footer">
-      <div class="col-md-4 color-scheme-ax foot">
-        <p><a class="foot-link" href="login.html" alt="link to login page">Login</a></p>
-      </div>
-      <div class="col-md-4 color-scheme-ay foot">
-        <p class="foot-intro">Thanks for visiting</p>
-        <p class="text-uppercase foot-title">Great Reads!</p>
-      </div>
-      <div class="col-md-4 color-scheme-ax foot">
-        <a class="social-media" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a class="social-media" href="https://www.ebay.co.uk/" target="_blank"><i class="fa-brands fa-ebay"></i></a>
-        <a class="social-media" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a class="social-media" href="https://www.amazon.co.uk/" target="_blank"><i class="fa-brands fa-amazon"></i></a>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12 #c62828 red darken-3">
+          <h5 class="white-text">Great Reads!</h5>
+          <p class="grey-text text-lighten-4">Thank you for visiting.</p>
+        </div>
+        <div class="col l4 offset-l2 s12 #000000 black">
+          <h5 class="#ffea00 yellow-text accent-3 text-lighten-3">Links</h5>
+          <ul>
+            <li><a class="#ffea00 yellow-text accent-3 text-lighten-3" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a class="#ffea00 yellow-text accent-3 text-lighten-3" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a class="#ffea00 yellow-text accent-3 text-lighten-3" href="https://www.ebay.co.uk/"><i class="fa-brands fa-ebay"></i></a></li>
+            <li><a class="#ffea00 yellow-text accent-3 text-lighten-3" href="https://www.amazon.co.uk/"><i class="fa-brands fa-amazon"></i></a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-  <div class="gold-stripe"></div>
+    <div class="footer-copyright #c62828 red darken-3">
+      <div class="container white-text">
+      © 2024 Gread Reads
+      <a class="white-text" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
 
-<!-- Bootstrap JavaScript Bundle Link -->
+<!-- Materialize javaScript and script.js Links -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>
+
 </body>
 </html>
