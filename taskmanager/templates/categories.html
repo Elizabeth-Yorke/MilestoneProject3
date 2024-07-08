@@ -1,6 +1,13 @@
 {% extends "base.html" %}
-{% block content %}
+{% block content %} 
 
-<h3 class="#ffea00 yellow-text accent-3 text-lighten-3 #c62828 red darken-3">Tasks</h3>
+<h3 class="#c62828 red-text darken-3 center-align">Categories</h3>
 
+<div class="row">
+    <div class="col s12 center-align">
+        <a href="{{ url_for('add_category')}}" class="btn-large #c62828 red darken-3">
+            Add Category <i class="fas fa-plus-square right"></i>
+        </a>
+    </div>
+</div>
 {% endblock %}

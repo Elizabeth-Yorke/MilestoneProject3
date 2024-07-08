@@ -32,7 +32,7 @@
       <ul class="right hide-on-med-and-down">
         <li><a class="#ffeb3b yellow-text" href="{{ url_for('home')}}">Home</a></li>
         <li><a class="#ffeb3b yellow-text" href="">New Task</a></li>
-        <li><a class="#ffeb3b yellow-text" href="">Categories</a></li>
+        <li><a class="#ffeb3b yellow-text" href="{{ url_for('categories')}}">Categories</a></li>
       </ul>
     </div>
   </nav>
@@ -40,7 +40,7 @@
   <ul class="sidenav" id="mobile-demo">
     <li><a class="#ffeb3b yellow-text" href="{{ url_for('home')}}">Home</a></li>
     <li><a class="#ffeb3b yellow-text" href="">New Task</a></li>
-    <li><a class="#ffeb3b yellow-text" href="">Categories</a></li>
+    <li><a class="#ffeb3b yellow-text" href="{{ url_for('categories')}}">Categories</a></li>
   </ul>
           
   </header>
@@ -48,7 +48,7 @@
 <!-- Main -->
 
   <main class="container">
-    {% block element %}
+    {% block content %}
     {% endblock %}
   </main>
 
